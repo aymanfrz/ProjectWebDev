@@ -1,0 +1,219 @@
+:root {
+    --kaya-yellow: #FFD700;
+    --kaya-orange: #FFA500;
+    --kaya-dark: #2c3e50;
+    --kaya-light: #f8f9fa;
+}
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/*Panel*/
+.kaya-hero {
+    background: url('/images/SandwichPanel.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 200px 0;
+    position: relative;
+}
+
+.kaya-section-title {
+    position: relative;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    color: var(--kaya-dark);
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+.kaya-section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--kaya-yellow), var(--kaya-orange));
+    border-radius: 2px;
+}
+
+.kaya-about {
+    background: var(--kaya-light);
+    padding: 60px 0;
+}
+
+.kaya-about p {
+    font-size: 1.1rem;
+    color: #555;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/*lsit produk*/
+.kaya-products {
+    padding: 60px 0;
+    background: white;
+}
+
+.kaya-category-title {
+    font-weight: 700;
+    color: var(--kaya-dark);
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+    border-left: 5px solid var(--kaya-yellow);
+    font-size: 1.8rem;
+}
+
+/*geser kanan geser kiri*/
+.kaya-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px 10px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--kaya-yellow) #f1f1f1;
+}
+
+.kaya-scroll-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.kaya-scroll-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.kaya-scroll-container::-webkit-scrollbar-thumb {
+    background: var(--kaya-yellow);
+    border-radius: 10px;
+}
+
+.kaya-scroll-container::-webkit-scrollbar-thumb:hover {
+    background: var(--kaya-orange);
+}
+
+/*card produk*/
+.kaya-product-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    background: white;
+    min-width: 280px;
+    flex-shrink: 0;
+}
+
+.kaya-product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.kaya-product-image {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+    position: relative;
+}
+
+.kaya-product-body {
+    padding: 1.5rem;
+}
+
+.kaya-product-name {
+    font-weight: 700;
+    color: var(--kaya-dark);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.kaya-product-desc {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.kaya-price {
+    background: linear-gradient(135deg, var(--kaya-yellow), var(--kaya-orange));
+    color: var(--kaya-dark);
+    font-weight: 700;
+    padding: 8px 20px;
+    border-radius: 25px;
+    display: inline-block;
+    font-size: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.kaya-advantages {
+    background: var(--kaya-light);
+    padding: 60px 0;
+}
+
+.kaya-advantage-item {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    margin-bottom: 2rem;
+    height: 100%;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid transparent;
+}
+
+.kaya-advantage-item h5 {
+    font-weight: 700;
+    color: var(--kaya-dark);
+    margin-bottom: 1rem;
+}
+
+.kaya-advantage-item p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/*Warna garis vertikal*/
+.sweet-category {
+    border-left-color: #e74c3c !important;
+}
+
+.savory-category {
+    border-left-color: #3498db !important;
+}
+
+@media (max-width: 768px) {
+    .kaya-section-title {
+        font-size: 1.8rem;
+    }
+    
+    .kaya-product-card {
+        min-width: 250px;
+    }
+    
+    .kaya-hero {
+        padding: 150px 0;
+    }
+}

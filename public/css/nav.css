@@ -1,0 +1,18 @@
+:root {
+    --kaya-yellow: #ffd700;
+    --kaya-orange: #ffa500;
+    --kaya-dark: #2c3e50;
+    --kaya-light: #f8f9fa;
+}
+
+* {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+.navbar{
+    position: absolute;
+}
+
+.navicon{
+    color: var(--kaya-yellow);
+}

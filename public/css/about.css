@@ -1,0 +1,68 @@
+:root {
+    --kaya-yellow: #ffd700;
+    --kaya-orange: #ffa500;
+    --kaya-dark: #2c3e50;
+    --kaya-light: #f8f9fa;
+}
+
+* {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+body {
+    background: var(--kaya-yellow);
+    color: #333;
+    line-height: 1.6;
+}
+
+.kaya-hero {
+    background: url("/images/logoSmall.png");
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.kaya-section-title {
+    position: relative;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    color: var(--kaya-dark);
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+.kaya-section-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--kaya-yellow), var(--kaya-orange));
+    border-radius: 2px;
+}
+
+.kaya-about {
+    background-color: var(--kaya-light);
+    padding: 60px 0;
+}
+
+.kaya-about p {
+    font-size: 1.1rem;
+    color: #555;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.marketing-section {
+    font-weight: 700;
+    color: var(--kaya-dark);
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+    border-left: 5px solid var(--kaya-yellow);
+    font-size: 1.8rem;
+}

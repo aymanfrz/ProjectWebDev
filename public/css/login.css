@@ -1,0 +1,73 @@
+:root {
+    --kaya-yellow: #ffd700;
+    --kaya-orange: #ffa500;
+    --kaya-dark: #2c3e50;
+    --kaya-light: #f8f9fa;
+}
+
+body {
+    background: var(--kaya-light);
+}
+
+.main {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    align-items: center;
+    text-align: center;
+}
+
+.header {
+    color: var(--kaya-dark);
+    font-weight: bolder;
+    font-size: 36px;
+    padding-bottom: 64px;
+}
+
+.KayaForm {
+    background: var(--kaya-yellow);
+    padding: 24px;
+    padding-top: 48px;
+    padding-bottom: 64px;
+}
+
+.formInput{
+    text-align: center;
+    border-width: 0px;
+    border-radius: 30px;
+    padding-bottom: 32px;
+}
+
+.InputComponent{
+    background: var(--kaya-light);
+    text-align: center;
+    border-width: 0px;
+    border-radius: 15px;
+    width: 240px;
+    height: 32px;
+}
+
+.ButtonInt{
+    background: var(--kaya-light);
+    border-width: px;
+    border-radius: 15px;
+    padding: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: var(--kaya-dark);
+}
+
+.ButtonExt {
+    padding-top: 64px;
+}
+
+.ButtonExt button{
+    font-size: 20px;
+    font-weight: bold;
+    background: var(--kaya-yellow);
+    border-width: 0px;
+    border-radius: 20px;
+    padding: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
+    color: var(--kaya-light);
+}

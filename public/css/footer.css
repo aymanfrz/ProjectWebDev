@@ -1,0 +1,14 @@
+:root {
+    --kaya-yellow: #ffd700;
+    --kaya-orange: #ffa500;
+    --kaya-dark: #2c3e50;
+    --kaya-light: #f8f9fa;
+}
+
+.footer-bg{
+    background: var(--kaya-yellow);
+}
+
+.footerheader {
+    color: var(--kaya-light);
+}
